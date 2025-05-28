@@ -3,6 +3,9 @@
 
 from utils.utils import dschat, sanitize, remained, dethink, check_avail
 
+source_dir = "original"
+result_dir = "docs"
+
 def translate(text):
     with open("examples/translated.md", "r") as f:
         example_tra = f.read()
@@ -24,10 +27,10 @@ def translate(text):
     response = dschat(prompt)
     return sanitize(response.content.decode())
 
-todo = remained("original", "translated", "md", "md")
+todo = remained(source_dir, result_dir, "md", "md")
 for file in todo:
     with open(file, "r", encoding="utf-8") as fin:
-        with open(file.replace("original", "translated", 1), "w", encoding="utf-8") as fout:
+        with open(file.replace(source_dir, result_dir, 1), "w", encoding="utf-8") as fout:
             fout.write(dethink(translate(fin.read())))
             print("Translation completed for " + file)
             check_avail()
