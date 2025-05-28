@@ -1,7 +1,7 @@
 #!/bin/env python
 # Use a translate server/model to translate
 
-from utils.utils import dschat, sanitize, remained, dethink, check_avail
+from utils.utils import dschat, sanitize, remained, dethink, check_avail, tr_log
 
 source_dir = "original"
 result_dir = "docs"
@@ -21,16 +21,20 @@ def translate(text):
 
 出于对译文格式一致性的需求，接下来将给出一段示范译文。按照相同的格式处理译文。
     """
-    prompt = prompt + "\n译文：\n" + example_tra + "\n\n你需要翻译的文段：\n" + text
+    prompt = prompt + "\n示范译文：\n" + example_tra + "\n\n你需要翻译的文段：\n" + text
     # * 保留格式：原文使用了html标签用于标记格式信息。维护这些信息。同时这些信息也应该为翻译提供某种指导，便于翻译出更贴切的译文；
 
     response = dschat(prompt)
     return sanitize(response.content.decode())
 
 todo = remained(source_dir, result_dir, "md", "md")
+tr_log("Total: " + str(len(todo)))
 for file in todo:
     with open(file, "r", encoding="utf-8") as fin:
-        with open(file.replace(source_dir, result_dir, 1), "w", encoding="utf-8") as fout:
-            fout.write(dethink(translate(fin.read())))
-            print("Translation completed for " + file)
-            check_avail()
+        content = fin.read()
+    tr_log("Now translate " + file)
+    translated = dethink(translate(content))
+    with open(file.replace(source_dir, result_dir, 1), "w", encoding="utf-8") as fout:
+        fout.write(translated)
+    tr_log("Translation completed for " + file)
+    check_avail()
