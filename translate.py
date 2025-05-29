@@ -21,7 +21,8 @@ def translate(text):
 
 出于对译文格式一致性的需求，接下来将给出一段示范译文。按照相同的格式处理译文。
     """
-    prompt = prompt + "\n示范译文：\n" + example_tra + "\n\n你需要翻译的文段：\n" + text
+    prompt = prompt + "\n示范译文：\n\u200b<demo>\u200b\n" + example_tra + \
+        "\n\u200b</demo>\u200b\n\n你需要翻译的文段：\n\u200b<source>\u200b\n" + text + "\n\u200b</source>\u200b\n"
     # * 保留格式：原文使用了html标签用于标记格式信息。维护这些信息。同时这些信息也应该为翻译提供某种指导，便于翻译出更贴切的译文；
 
     response = dschat(prompt)
