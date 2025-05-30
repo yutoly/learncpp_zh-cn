@@ -1,5 +1,3 @@
-
-
 A.1 — 静态库与动态库  
 ==================================  
 
@@ -45,6 +43,6 @@ A.1 — 静态库与动态库
 
 步骤3-5涉及IDE配置——几乎所有IDE的处理方式都相同。但由于不同IDE界面差异较大，最难的部分往往是找到执行这些步骤的正确位置。因此，本系列后续课程将分别讲解Visual Studio和Code::Blocks的具体配置方法。若使用其他IDE，建议阅读全部内容，届时您应能通过简单搜索完成自己IDE的配置。  
 
-[下一课 A.2 在Visual Studio中使用库](https://www.learncpp.com/cpp-tutorial/a2-using-libraries-with-visual-studio-2005-express/)  
-[返回目录](/)
-[上一课 28.7 随机文件I/O](https://www.learncpp.com/cpp-tutorial/random-file-io/)
+[下一课 A.2 在Visual Studio中使用库](Appendix-A/lessonA.2-a2-using-libraries-with-visual-studio-2005-express.md)  
+[返回主页](/)  
+[上一课 28.7 随机文件I/O](Chapter-28/lesson28.7-random-file-io.md)

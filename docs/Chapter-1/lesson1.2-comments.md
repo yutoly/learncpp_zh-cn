@@ -1,5 +1,3 @@
-
-
 1.2 — 注释  
 ===============
 
@@ -170,7 +168,7 @@ cost = quantity * 2 * storePrice;
 最后，注释应让不了解代码的人也能理解。切勿认为"这段代码意图显而易见"，实际上代码意图往往并不直观，且记忆消退速度远超预期。阅读单行代码容易，理解整体目标却困难。  
 
 > **相关内容**  
-> 变量声明语句的注释规范详见课程[1.7 — 关键字与标识符命名](https://www.learncpp.com/cpp-tutorial/keywords-and-naming-identifiers/)。  
+> 变量声明语句的注释规范详见课程[1.7 — 关键字与标识符命名](Chapter-1/lesson1.7-keywords-and-naming-identifiers.md)。  
 
 > **最佳实践**  
 > 充分注释代码，假设读者完全不了解代码功能。切勿假设自己会记住每个决策的缘由。  
@@ -225,7 +223,7 @@ cost = quantity * 2 * storePrice;
 * **VS Code**：Ctrl+/ 切换注释  
 
 > **技巧**  
-> 若常规注释使用单行风格，可用多行注释来注释代码块避免冲突。如需注释含多行注释的代码块，可考虑使用`#if 0`预处理指令（详见课程[2.10 — 预处理器简介](https://www.learncpp.com/cpp-tutorial/introduction-to-the-preprocessor/#if0)）。  
+> 若常规注释使用单行风格，可用多行注释来注释代码块避免冲突。如需注释含多行注释的代码块，可考虑使用`#if 0`预处理指令（详见课程[2.10 — 预处理器简介](introduction-to-the-preprocessor/#if0)）。  
 
 总结  
 ----------------  
@@ -233,6 +231,6 @@ cost = quantity * 2 * storePrice;
 * **实现级**：注释说明*方法*  
 * **语句级**：注释说明*原因*  
 
-[下一课 1.3 — 对象与变量简介](https://www.learncpp.com/cpp-tutorial/introduction-to-objects-and-variables/)  
-[返回目录](/)
-[上一课 1.1 — 语句与程序结构](https://www.learncpp.com/cpp-tutorial/statements-and-the-structure-of-a-program/)
+[下一课 1.3 — 对象与变量简介](Chapter-1/lesson1.3-introduction-to-objects-and-variables.md)
+[返回主页](/)  
+[上一课 1.1 — 语句与程序结构](Chapter-1/lesson1.1-statements-and-the-structure-of-a-program.md)

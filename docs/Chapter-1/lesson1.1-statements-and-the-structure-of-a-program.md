@@ -73,8 +73,8 @@
 > 计算机还有一类"控制字符（control character）"，这些字符对系统有特殊含义，通常不显示或显示为特殊符号。著名控制字符包括："escape"（不显示）、"tab"（显示为若干空格）和"backspace"（删除前一字符）。  
 
 > **相关内容**  
-> 字符和文本输出详见课程[1.5 — iostream简介：cout、cin与endl](https://www.learncpp.com/cpp-tutorial/introduction-to-iostream-cout-cin-and-endl/)  
-> 字符（含控制字符）的详细讨论见课程[4.11 — 字符](https://www.learncpp.com/cpp-tutorial/chars/)  
+> 字符和文本输出详见课程[1.5 — iostream简介：cout、cin与endl](Chapter-1/lesson1.5-introduction-to-iostream-cout-cin-and-endl.md)  
+> 字符（含控制字符）的详细讨论见课程[4.11 — 字符](Chapter-4/lesson4.11-chars.md)  
 
 解析Hello World程序  
 ----------------  
@@ -114,7 +114,7 @@ int main()
 Hello world!
 ```  
 
-若遇到编译或执行问题，请参考课程[0.8 — 常见C++问题](https://www.learncpp.com/cpp-tutorial/a-few-common-cpp-problems/)。  
+若遇到编译或执行问题，请参考课程[0.8 — 常见C++问题](Chapter-0/lesson0.8-a-few-common-cpp-problems.md)。  
 
 语法与语法错误（Syntax and syntax errors）  
 ----------------  
@@ -161,41 +161,41 @@ c:\vcprojects\hello.cpp(6): 错误 C2143: 语法错误: 'return'前缺少';'
 
 **问题1**  
 什么是语句？  
-[查看答案](javascript:void(0))  
+  
 <details><summary>答案</summary>语句是计算机程序中指示执行动作的指令。</details>  
 
 **问题2**  
 什么是函数？  
-[查看答案](javascript:void(0))  
+  
 <details><summary>答案</summary>函数是按顺序执行的语句集合。</details>  
 
 **问题3**  
 所有程序必须包含的函数名称是？  
-[查看答案](javascript:void(0))  
+  
 <details><summary>答案</summary>main</details>  
 
 **问题4**  
 程序运行时会发生什么？  
-[查看答案](javascript:void(0))  
+  
 <details><summary>答案</summary>main()中的语句按顺序执行。</details>  
 
 **问题5**  
 C++语句通常以什么符号结尾？  
-[查看答案](javascript:void(0))  
+  
 <details><summary>答案</summary>分号（;）</details>  
 
 **问题6**  
 什么是语法错误？  
-[查看答案](javascript:void(0))  
+  
 <details><summary>答案</summary>违反C++语法规则导致的错误。</details>  
 
 **问题7**  
 什么是C++标准库？  
 [查看提示](javascript:void(0))  
-<details><summary>提示</summary>复习课程[0.5 — 编译器、链接器与库简介](https://www.learncpp.com/cpp-tutorial/introduction-to-the-compiler-linker-and-libraries/)</details>  
-[查看答案](javascript:void(0))  
+<details><summary>提示</summary>复习课程[0.5 — 编译器、链接器与库简介](Chapter-0/lesson0.5-introduction-to-the-compiler-linker-and-libraries.md)</details>  
+  
 <details><summary>答案</summary>随C++提供的可重用代码库，包含扩展功能。</details>  
 
-[下一课 1.2 注释](https://www.learncpp.com/cpp-tutorial/comments/)  
-[返回目录](/)
-[上一课 0.13 编译器使用的语言标准](https://www.learncpp.com/cpp-tutorial/what-language-standard-is-my-compiler-using/)
+[下一课 1.2 注释](Chapter-1/lesson1.2-comments.md)  
+[返回主页](/)  
+[上一课 0.13 编译器使用的语言标准](Chapter-0/lesson0.13-what-language-standard-is-my-compiler-using.md)
